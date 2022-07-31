@@ -1,1 +1,1 @@
-# template_rproj
+# pretty_plots
