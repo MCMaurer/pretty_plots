@@ -9,11 +9,9 @@ output-file: README.md
 #| echo: false
 #| results: asis
 
-knitr::include_graphics(list.files(pattern = "*.jpg|*.png"))
+images <- list.files(pattern = "*.jpg|*.png", full.names = T)
 
-# images <- list.files(pattern = "*.jpg|*.png")
-# 
-# for (i in 1:length(images)){
-#   cat("\n![](", images[i], ")\n")
-# }
+for (i in 1:length(images)){
+  cat("\n![](", images[i], ")\n")
+}
 ```
