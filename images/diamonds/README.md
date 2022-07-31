@@ -1,5 +1,3 @@
-README
-================
 
 <div class="cell-output-display">
 
