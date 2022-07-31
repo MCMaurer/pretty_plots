@@ -1,0 +1,15 @@
+---
+title: "README"
+format: gfm
+editor: visual
+---
+
+```{r}
+#| label: plots
+#| echo: false
+#| results: asis
+
+images <- fs::dir_ls(here::here("images/penguins/"), glob = "*.jpg|*.png")
+
+purrr::walk(images, ~cat("\n![](", .x, ")\n"))
+```
