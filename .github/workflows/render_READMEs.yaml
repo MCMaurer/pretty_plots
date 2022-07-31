@@ -23,7 +23,7 @@ jobs:
         run: |
           git config --global user.email "culshawmaurer@arizona.edu"
           git config --global user.name "Michael Culshaw-Maurer"
-          git add --force *README.md
-          git add --force *README_files/
+          git add --force *README.md || echo "No READMEs to commit"
+          git add --force *README_files/ || echo "No README_files to commit"
           git commit -m 'Render READMEs' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
