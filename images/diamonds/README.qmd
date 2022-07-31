@@ -9,7 +9,16 @@ editor: visual
 #| echo: false
 #| results: asis
 
-images <- fs::dir_ls(here::here("images/diamonds/"), glob = "*.jpg|*.png")
+# fs::dir_ls("images/diamonds/")
+# 
+# here::here()
+# 
+# images <- list.files(here::here("images/diamonds/"), pattern = "*.jpg|*.png")
+# 
+# images <- fs::dir_ls(here::here("images/diamonds/"), glob = "*.jpg|*.png") %>% 
+#   fs::path
+# 
+# purrr::walk(images, ~cat("\n![](", .x, ")\n"))
 
-purrr::walk(images, ~cat("\n![](", .x, ")\n"))
+knitr::include_graphics(fs::dir_ls(here::here("images/diamonds/"), glob = "*.jpg|*.png"))
 ```
