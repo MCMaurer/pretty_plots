@@ -1,6 +1,7 @@
 ---
 format: gfm
 editor: visual
+output-file: README.md
 ---
 
 ```{r}

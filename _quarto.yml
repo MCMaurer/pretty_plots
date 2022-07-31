@@ -1,2 +1,4 @@
 project:
   title: "Pretty Plots"
+  render:
+    - "README.qmd"
