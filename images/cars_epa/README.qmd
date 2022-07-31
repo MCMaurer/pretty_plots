@@ -8,5 +8,5 @@ editor: visual
 #| echo: false
 #| results: asis
 
-knitr::include_graphics(fs::dir_ls(here::here("images/cars_epa/"), glob = "*.jpg|*.png"))
+knitr::include_graphics(list.files(pattern = "*.jpg|*.png"))
 ```
