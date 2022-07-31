@@ -22,6 +22,6 @@ Contains scripts that correspond to a dataset and `images` sub-folder.
 
 ## `palmerpenguins` data
 
-![](images/penguins/penguin_bills_light.jpg)
-![](images/penguins/penguin_bills_dark.jpg)
+![](images/penguins/penguin_bills_both.jpg)
+
 
