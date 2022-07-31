@@ -10,4 +10,10 @@ output-file: README.md
 #| results: asis
 
 knitr::include_graphics(list.files(pattern = "*.jpg|*.png"))
+
+# images <- list.files(pattern = "*.jpg|*.png")
+# 
+# for (i in 1:length(images)){
+#   cat("\n![](", images[i], ")\n")
+# }
 ```
