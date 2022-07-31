@@ -1,8 +1,6 @@
-README
-================
 
-![](/Users/MJ/GitHub/pretty_plots/images/cars_epa/med_mpg_by_class.jpg)
+<div class="cell-output-display">
 
-![](/Users/MJ/GitHub/pretty_plots/images/cars_epa/med_mpg_by_make.jpg)
+<img src="../diamonds/diamond_price_facets.jpg" width="3000" />
 
-![](/Users/MJ/GitHub/pretty_plots/images/cars_epa/mpg_ridges_byclass_last10years.jpg)
+</div>

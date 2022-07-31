@@ -1,8 +1,6 @@
-README
-================
 
-![](/Users/MJ/GitHub/pretty_plots/images/penguins/penguin_bills_both.jpg)
+<div class="cell-output-display">
 
-![](/Users/MJ/GitHub/pretty_plots/images/penguins/penguin_bills_dark.jpg)
+<img src="../diamonds/diamond_price_facets.jpg" width="3000" />
 
-![](/Users/MJ/GitHub/pretty_plots/images/penguins/penguin_bills_light.jpg)
+</div>

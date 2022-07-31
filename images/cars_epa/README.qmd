@@ -1,5 +1,4 @@
 ---
-title: "README"
 format: gfm
 editor: visual
 ---
@@ -9,7 +8,5 @@ editor: visual
 #| echo: false
 #| results: asis
 
-images <- fs::dir_ls(here::here("images/cars_epa/"), glob = "*.jpg|*.png")
-
-purrr::walk(images, ~cat("\n![](", .x, ")\n"))
+knitr::include_graphics(fs::dir_ls(here::here("images/diamonds/"), glob = "*.jpg|*.png"))
 ```
