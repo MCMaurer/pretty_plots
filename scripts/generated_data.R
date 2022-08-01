@@ -4,6 +4,9 @@ library(slider)
 library(patchwork)
 library(MCMsBasics)
 
+
+# gaussian by addition ----------------------------------------------------
+
 nsteps <- 50
 nreps <- 1000
 

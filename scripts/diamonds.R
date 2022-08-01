@@ -3,6 +3,9 @@ library(ggtext)
 library(ggh4x)
 library(MCMsBasics)
 
+
+# price vs. carat with clarity, cut, and color ----------------------------------
+
 p <- diamonds %>% 
   mutate(cutname = "Cut", clarityname = "Clarity",
          color = fct_rev(color), 
@@ -59,9 +62,3 @@ cols <- unique(g$data[[1]]$colour)
 
 cols
 colorspace::swatchplot(cols)
-# 
-# cols %>% 
-#   ggplot(aes(x,y, color = col, label = col)) +
-#   geom_text() +
-#   scale_color_identity() +
-#   theme_void()

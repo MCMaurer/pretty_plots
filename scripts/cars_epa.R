@@ -3,6 +3,10 @@ library(ggtext)
 library(ggh4x)
 library(MCMsBasics)
 
+
+# data setup --------------------------------------------------------------
+
+
 cars_mpg <- cars_mpg %>% 
   mutate(VClass_s = case_when(
     str_detect(VClass, "Sport Utility Vehicle -|Standard Sport") ~ "SUVs",
@@ -15,6 +19,10 @@ cars_mpg <- cars_mpg %>%
     str_detect(VClass, "Cargo") ~ "Cargo Vans",
     TRUE ~ VClass
   ))
+
+
+# mpg by make -------------------------------------------------------------
+
 
 c2 <- cars_mpg %>% 
   select(where(~sum(is.na(.x))/length(.x) < 0.1)) %>% 
@@ -44,6 +52,11 @@ c2 %>%
        subtitle = "Changes in median MPG by manufacturer")
 
 ggsave("images/cars_epa/med_mpg_by_make.jpg", device = grDevices::jpeg, width = 10, height = 8)
+
+
+# mpg by vehicle class ----------------------------------------------------
+
+
 
 c3 <- cars_mpg %>% 
   select(where(~sum(is.na(.x))/length(.x) < 0.1)) %>% 

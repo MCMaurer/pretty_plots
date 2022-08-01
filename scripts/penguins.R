@@ -3,6 +3,10 @@ library(MCMsBasics)
 library(palmerpenguins)
 library(patchwork)
 
+
+# bill length vs. depth ---------------------------------------------------
+
+
 p <- penguins %>% 
   ggplot(aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
   geom_point() +
