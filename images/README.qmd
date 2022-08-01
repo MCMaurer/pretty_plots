@@ -3,6 +3,8 @@ format: gfm
 editor: visual
 ---
 
+## Here is a random sampling of some images from the sub-directories
+
 ```{r}
 #| label: plots
 #| echo: false
