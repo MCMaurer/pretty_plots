@@ -14,12 +14,12 @@ p <- penguins %>%
        x = "Bill length (mm)",
        y = "Bill depth (mm)")
 
-p1 <- p + theme_mcm() + theme(legend.position = "none")
+p1 <- p + theme_mcm(large_lineheight = T) + theme(legend.position = "none")
 p1
 
 ggsave("images/penguins/penguin_bills_light.jpg", device = grDevices::jpeg, width = 6, height = 4)
 
-p2 <- p + theme_mcm_dark() + theme(legend.position = "none")
+p2 <- p + theme_mcm_dark(large_lineheight = T) + theme(legend.position = "none")
 p2
 
 ggsave("images/penguins/penguin_bills_dark.jpg", device = grDevices::jpeg, width = 6, height = 4)

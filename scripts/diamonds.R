@@ -59,9 +59,9 @@ cols <- unique(g$data[[1]]$colour)
 
 cols
 colorspace::swatchplot(cols)
-
-cols %>% 
-  ggplot(aes(x,y, color = col, label = col)) +
-  geom_text() +
-  scale_color_identity() +
-  theme_void()
+# 
+# cols %>% 
+#   ggplot(aes(x,y, color = col, label = col)) +
+#   geom_text() +
+#   scale_color_identity() +
+#   theme_void()
