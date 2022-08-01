@@ -1,10 +1,10 @@
 
 ## Here is a random sampling of some images from the sub-directories
 
+![](./cars_epa/mpg_ridges_byclass_last10years.jpg)
+
 ![](./cars_epa/med_mpg_by_class.jpg)
 
 ![](./diamonds/diamond_price_facets.jpg)
 
-![](./cars_epa/med_mpg_by_make.jpg)
-
-![](./generated_data/gaussian_dist_by_addition.jpg)
+![](./penguins/penguin_bills_light.jpg)
