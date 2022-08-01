@@ -10,7 +10,7 @@ p <- penguins %>%
   scale_x_quantile(val = penguins$bill_length_mm) +
   scale_y_quantile(val = penguins$bill_depth_mm) +
   labs(title = "Penguin Bills",
-       subtitle = "Bill size varies by species, with <span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Adelies</span> having shorter,<br>deeper bills compared to <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Chinstraps</span> and <span style = 'color:#7570B3;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Gentoos</span>.",
+       subtitle = "Bill size varies by species, with <span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Adelies</span> having shorter,<br>deeper bills compared to <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Chinstraps</span> and <span style = 'color:#7570B3;font-family:FrauncesSuperSoftWonky-MediumItalic;'>Gentoos</span>. <br> Axis labels denote 0%, 25%, 50%, 75%, and 100% quantiles.",
        x = "Bill length (mm)",
        y = "Bill depth (mm)")
 

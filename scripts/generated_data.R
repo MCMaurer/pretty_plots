@@ -32,4 +32,4 @@ c(rep(0, nreps), runif(nsteps*nreps, -0.2, 0.2)) %>%
        x = "Step",
        y = "Value")
 
-ggsave("images/generated_data/gaussian_dist_by_addition.jpg", width = 6, height = 4)
+ggsave("images/generated_data/gaussian_dist_by_addition.jpg", width = 6, height = 4, device = grDevices::jpeg)
