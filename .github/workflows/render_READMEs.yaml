@@ -23,6 +23,7 @@ jobs:
         run: |
           git config --global user.email "culshawmaurer@arizona.edu"
           git config --global user.name "Michael Culshaw-Maurer"
+          git status
           git add --force */README.md || echo "No READMEs to commit"
           git add --force README.md || echo "No top-level README to commit"
           git add --force */README_files/ || echo "No README_files to commit"
