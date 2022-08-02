@@ -20,5 +20,5 @@ jobs:
       - name: Render READMEs
         run: Rscript render_READMEs.R
       - uses: stefanzweifel/git-auto-commit-action@v4
-          with:
-            commit_message: README rendering bot
+        with:
+          commit_message: README rendering bot
