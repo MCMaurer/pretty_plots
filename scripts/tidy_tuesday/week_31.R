@@ -36,14 +36,14 @@ p1 <- ggplot() +
           color = NA, alpha = 0.5) +
   coord_sf(xlim = c(-121.835, -121.755),
            ylim = c(43.764375, 43.814821)) +
-  theme_mcm() +
+  theme_mcm(large_lineheight = T) +
   theme(axis.title = element_blank(),
         axis.text = element_blank(),
         legend.position = "none"
   ) +
   scale_fill_brewer(palette = "Dark2") +
   labs(title = "Oh how the frogs roam",
-       subtitle = "Convex hulls containing sampling locations for individual <br><span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>female</span> and <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>male</span> frogs.")
+       subtitle = "Convex hulls containing telemetry locations for individual <br><span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>female</span> and <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>male</span> frogs at Crane Prairie Reservoir in Oregon.<br>Data courtesy of the USGS.")
 
 p2 <- frog_hulls %>% 
   mutate(area = st_area(geometry) %>% 
