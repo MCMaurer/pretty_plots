@@ -43,7 +43,7 @@ p1 <- ggplot() +
   ) +
   scale_fill_brewer(palette = "Dark2") +
   labs(title = "Oh how the frogs roam",
-       subtitle = "Convex hulls containing telemetry locations for individual <br><span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>female</span> and <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>male</span> frogs at Crane Prairie Reservoir in Oregon.<br>Data courtesy of the USGS.")
+       subtitle = "Convex hulls containing telemetry locations for individual <span style = 'color:#1B9E77;font-family:FrauncesSuperSoftWonky-MediumItalic;'>female</span> and <span style = 'color:#D95F02;font-family:FrauncesSuperSoftWonky-MediumItalic;'>male</span><br>Oregon spotted frogs at Crane Prairie Reservoir in Oregon.<br>Data courtesy of the USGS.")
 
 p2 <- frog_hulls %>% 
   mutate(area = st_area(geometry) %>% 
