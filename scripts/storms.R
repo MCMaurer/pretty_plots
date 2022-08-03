@@ -69,7 +69,7 @@ ggplot() +
                                            alpha = category,
                                            size = category)) +
   scale_color_viridis_d(option = "A", direction = -1, end = 0.9,
-                        guide = ggh4x::guide_stringlegend()) +
+                        guide = ggh4x::guide_stringlegend(nrow = 1)) +
   scale_alpha_discrete(guide = NULL,
                        range = c(0.2, 1)) +
   scale_size_manual(values = seq(from = 0.3, to = 0.9, by = 0.1),
@@ -78,12 +78,20 @@ ggplot() +
   ylim(c(10,50)) +
   theme_mcm() +
   facet_wrap(vars(decade)) +
-  theme(axis.text = element_blank(), axis.title = element_blank()) +
+  theme(axis.text = element_blank(), 
+        axis.title = element_blank(),
+        legend.position = "top",
+        legend.margin = margin(0,0,0,0),
+        legend.box.margin = margin(5,0,-5,0),
+        legend.direction = "horizontal",
+        legend.justification = "left") +
   labs(title = "Hurricane Tracks",
-       subtitle = "Data from NOAA Atlantic storm tracks. Data taken <br> every 6 hours for the duration of named storms.")
+       subtitle = "Data from NOAA Atlantic storm tracks. Data taken <br> every 6 hours for the duration of named storms.",
+       color = "Category")
+  
 
 ggsave("images/storms/storm_tracks_pointpath_facet_decades.jpg",
-       device = grDevices::jpeg, width = 8, height = 7)
+       device = grDevices::jpeg, width = 10, height = 8)
   
 
 ssf %>% 
