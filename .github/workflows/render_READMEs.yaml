@@ -19,12 +19,6 @@ jobs:
         run: Rscript -e 'install.packages("quarto")'
       - name: Render READMEs
         run: Rscript render_READMEs.R
-      - name: Commit results
-        run: |
-          git config --global user.email "culshawmaurer@arizona.edu"
-          git config --global user.name "Michael Culshaw-Maurer"
-          git add --force */README.md || echo "No READMEs to commit"
-          git add --force README.md || echo "No top-level README to commit"
-          git add --force */README_files/ || echo "No README_files to commit"
-          git commit -m 'Render READMEs' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: README rendering bot
