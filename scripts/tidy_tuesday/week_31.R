@@ -49,8 +49,6 @@ p2 <- frog_hulls %>%
   mutate(area = st_area(geometry) %>% 
            as.numeric()) %>% 
   ggplot(aes(x = area, y = sex, fill = sex)) +
-  #geom_histogram()
-  #ggridges::stat_binline(color = NA, alpha = 0.8) +
   ggridges::geom_density_ridges(color = NA, alpha = 0.8) +
   scale_fill_brewer(palette = "Dark2") +
   theme_mcm() +
