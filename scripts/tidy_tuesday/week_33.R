@@ -34,7 +34,7 @@ p <- sop_emo %>%
   theme_mcm(mult2 = 2.5, mult4 = 4) +
   theme(axis.title.y = element_blank()) +
   labs(title = "This emoji thing of ours",
-       subtitle = '"Listen Tone, they\'re called emojis. They\'re the hot new thing, but check this out:\nthe Egyptians did em hundred of years ago or whatever. Called em hairy gliffs."',
+       subtitle = '"Listen Tone, they\'re called emojis. They\'re the hot new thing, but check this out:<br>the Egyptians did em hundred of years ago or whatever. Called em hairy gliffs."',
        x = "Average Rating")
 
 ggsave("images/tidy_tuesday/week_33_sopranos_emojis.jpg", plot = p, width = 20, height = 12)
