@@ -38,3 +38,4 @@ p <- sop_emo %>%
        x = "Average Rating")
 
 ggsave("images/tidy_tuesday/week_33_sopranos_emojis.jpg", plot = p, width = 20, height = 12)
+

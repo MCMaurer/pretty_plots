@@ -2,6 +2,8 @@
 
 A repo for practicing nice visualizations, including plots for #TidyTuesday.
 
+Currently only R, but who knows...
+
 ## `images` folder
 
 Contains sub-folders of images made from particular datasets.
