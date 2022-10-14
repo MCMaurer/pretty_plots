@@ -21,15 +21,19 @@ p <- diamonds %>%
         legend.direction = "horizontal",
         legend.justification = "left",
         axis.ticks = element_line(), 
-        axis.title.x = element_text(hjust = 0.065),
-        axis.title.y = element_text(hjust = 0.015)) +
+        axis.title.x = element_markdown(hjust = 0.065),
+        axis.title.y = element_markdown(hjust = 0.015)) +
   facet_nested(rows = vars(clarityname, clarity), cols = vars(cutname, cut),
                strip = strip_nested(text_x = 
-                                      elem_list_text(family = c("FrauncesSuperSoftWonky-Medium", 
+                                      elem_list_text(family = c("fraunces", 
+                                                                rep(NA, 100)), 
+                                                     face = c("bold", 
                                                                 rep(NA, 100))),
                                     text_y = 
-                                      elem_list_text(family = c("FrauncesSuperSoftWonky-Medium", 
-                                                                rep(NA, 100)))),
+                                      elem_list_text(family = c("fraunces", 
+                                                                rep(NA, 100)), 
+                                                     face = c("bold", 
+                                                              rep(NA, 100)))),
                scales = "free") +
   facetted_pos_scales(
     x = list(
